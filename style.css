@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+#textDefil{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    color: black;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/machine.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    gap: 500px;
+    z-index: 10;
+}
+.navbar h1{
+    margin: 33px 0px 0px 0px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-shadow: 0 15px 20px rgba(0,0,0.5);
+}
+.navbar h1 a{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 10px 10px;
+}
+.navbar h1 a:hover{
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: rgb(109, 100, 100);
+}
+.col1 img{
+    width: 20%;
+    padding: 50px 50px;
+    background-color: white;
+    border-radius: 500px;
+    border: solid;
+    border-width: 5px;
+    border-color: blue red black green;
+    margin: 200px 200px 0px 250px;
+    box-shadow: 0 35px 35px rgba(0,0,0.5);
+    animation: boom 8s linear infinite alternate ;
+}
+.col1 img:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+@keyframes boom{
+    to{
+        rotate: -360deg;
+    }
+}
+
+#portfolio{
+    letter-spacing: 5px;
+    padding: 10px 25px;
+    border: none;
+    border-width: 0.1px;
+    padding: 5px 20px 5px 20px;
+    gap: 5px;
+    box-shadow: 0 15px 20px rgba(0,0,0.5);
+    background-color: gray;
+}
+#portfolio a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+#portfolio:hover{
+    background-color: rgb(85, 76, 76);
+    a{
+        color: white;
+    }
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 50px 20px 0;
+    position: relative;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 15px;
+}
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.row{
+    height: 88%;
+    display: flex;
+    align-items: center;
+}
+.content{
+    max-width: 450px;
+    margin: 250px 20px 0px 0px;
+}
+.content h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    width: 100px;
+}
+.content p{
+    color: white;
+    font-size: 17px;
+    line-height: 18px;
+    margin: 50px 0;
+    letter-spacing: 0.1px;
+    font-weight: 100;
+}
+.icones i{
+    margin: 35px 5% 930px 50px;
+    top: 0;
+    right: 0;
+    color: green;
+    font-size: 25px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 100%;
+    position: fixed;
+    animation: booma 2s linear infinite;
+}
+/* @keyframes booma{
+    10%{
+        padding: 20px;
+    }
+} */
+.icones i:hover{
+    cursor: pointer;
+    border: solid;
+    border-width: 0.5px;
+    border-color: white;
+    background-color:black;
+    color: white;
+}
+#commonBtn{
+    width: 350px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 15px 10px rgba(0,0,0.5);
+}
+#commonBtn:hover{
+    background:black;
+    color: white;
+}
+.col{
+    flex-basis: 50%;
+}
+
+#menuBox{
+    width: 200px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/imagesl.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    right: 0;
+    position: fixed;
+    transition: 0.5s;
+}
+#menuBox ul li{
+    list-style: none;
+    margin: 70px 20px;
+}
+#menuBox ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#menuBox ul li a:hover{
+    color:gray;
+}
+footer{
+    height: 50vh;
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.reseaux{
+    background-color: black;
+    margin: 0px 25px 10px 700px;
+    padding: 10px 200px 10px 10px;
+}
+.reseaux a{
+    display: block;
+    align-items:center;
+    justify-content: space-between;
+    font-size: 30px;
+    margin: 10px 10px 10px 93%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 500px;
+}
+.reseaux a:hover{
+    color: rgb(56, 53, 53);
+}
+
+.deroule{
+    /* background-color: cadetblue; */
+    font: optional;
+    margin: 10px 200px 0px 100px;
+}
+.deroule summary{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: solid;
+    padding: 10px;
+    color: purple;
+    background-color: aliceblue;
+    margin: 10px 0px 0px 900px;
+}
+.deroule ul li{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 10px 0px 0px 900px;
+}
+
+@media screen and (max-width: 430px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        position: relative;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content {
+        margin: 80px 10px 0 10px;
+        max-width: 100%;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 15px;
+        margin: 20px 0;
+    }
+
+    .col1 img {
+        width: 60%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    #commonBtn {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .reseaux {
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .reseaux a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .icones i {
+        margin: 10px;
+        font-size: 20px;
+    }
+}

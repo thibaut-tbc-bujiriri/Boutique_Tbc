@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Boutique_en_Ligne</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="images/aaaaap.jpg">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1><a href="https://google.com">TBC GROUPE</a></h1>
+            <nav>
+                <ul>
+                    <button id="portfolio"><a href="https://tbcportfolio.web.app/">CEO</a></button>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="mailto:thibauttbcbujiriri@gmail.com">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="content">
+                    <h2>Boutique <span id="textDefil"></span></h2>
+                    <p>
+                        " Nous sommes une boutique numérique à la hauteur de vos besoins.
+                        nous vendons des accessoires informatiques, des outils de vidéo surveillance
+                        et bien d'autres choses en matière des outils informatiques. Vous êtes tous les bienvenus 🙌🙌 ."
+                    </p>
+                    <button type="button" id="commonBtn">VOIR NOS PRODUITS</button>
+                </div><br>
+                <br>
+                <br>
+            </div>
+            <div class="col1">
+                <img src="images/aaaaap.jpg" title="TBC_animatin">
+            </div>
+            <div class="icones">
+                <a href="https://wa.me/243979823604">
+                   <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="menuBox">
+        <ul>
+            <li><a href="#">Ordinateur</a></li>
+            <li><a href="#">Telephone</a></li>
+            <li><a href="#">Montre Intelligente</a></li>
+            <li><a href="#">Camera de surveillance</a></li>
+            <li><a href="#">Switch</a></li>
+            <li><a href="#">CABLE,CONNECTEUR RJ45</a></li>
+            <!-- <li><a href="#">NVR & AUTRES</a></li> -->
+        </ul>
+    </div>
+    <footer>
+        <div class="reseaux">
+            <a href="https://www.facebook.com/thibaut.tbcbujiriri/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/thibaut-tbc-bujiriri-4594872a8/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/thibaut-tbc-bujiriri"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/thibaut_tbc_bujiriri_dev0ps/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- <div class="deroule">
+            <details>
+                <summary>Autres</summary>
+                <br>
+                <ul>
+                    <li>DEVELLOPEMENT WEB</li>
+                    <li>FORMATION JS</li>
+                    <li>DEVELLOPEMENT MOBILE </li>
+                </ul>
+            </details>
+        </div> -->
+    </footer>
+    <script>
+        let commonBtn = document.getElementById("commonBtn")
+        let menuBox = document.getElementById("menuBox")
+
+
+        menuBox.style.right = "-200px";
+        commonBtn.onclick = function(){
+            if(menuBox.style.right == "-200px"){
+                menuBox.style.right = "0px"
+            }
+            else(menuBox.style.right = "-200px")
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#textDefil', {
+          strings: ["Numérique","TBC&#x2122;"],
+          loop: 1,
+          typeSpeed: 900,
+          startDelay: 100,
+          typeSpeed: 50,
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
