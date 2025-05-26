@@ -215,7 +215,7 @@ nav ul li:hover::after{
     color:gray;
 }
 footer{
-    height: 50vh;
+    height: 40vh;
     background-color: gray;
     background-size: cover;
     background-repeat: no-repeat;
@@ -223,6 +223,12 @@ footer{
 .reseaux{
     background-color: black;
 }
+.reseaux p{
+    color: white;
+    bottom: 30px;
+    left: 10px;
+}
+
 .reseaux a{
     display: block;
     align-items:center;
@@ -313,14 +319,27 @@ footer{
         padding: 10px;
         text-align: center;
     }
-
+    .reseaux p{
+        position: relative;
+        top: 10px;
+    }
     .reseaux a {
         display: inline-block;
         margin: 10px;
     }
-
     .icones i {
         margin: 10px;
         font-size: 20px;
+    }
+    .container{
+        height: 100%;
+    }
+    #commonBtn{
+        position: relative;
+        top:50px
+    }
+    footer{
+        top: 500px;
+        height: 20px;
     }
 }
