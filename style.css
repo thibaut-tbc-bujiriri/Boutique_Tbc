@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: space-between;
     position:fixed;
-    gap: 500px;
+    gap: 400px;
     z-index: 10;
 }
 .navbar h1{
@@ -123,7 +123,7 @@ nav ul li:hover::after{
     width: 100%;
 }
 .row{
-    height: 88%;
+    height: 80%;
     display: flex;
     align-items: center;
 }
@@ -222,8 +222,6 @@ footer{
 }
 .reseaux{
     background-color: black;
-    margin: 0px 25px 10px 700px;
-    padding: 10px 200px 10px 10px;
 }
 .reseaux a{
     display: block;
