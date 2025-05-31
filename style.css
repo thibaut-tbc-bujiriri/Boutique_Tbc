@@ -302,13 +302,15 @@ footer{
         font-size: 15px;
         margin: 20px 0;
     }
-
+    
     .col1 img {
         width: 60%;
         margin: 20px auto;
         padding: 10px;
     }
-
+    #textDefil{
+        font-size: 30px;;
+    }
     #commonBtn {
         width: 90%;
         font-size: 16px;
