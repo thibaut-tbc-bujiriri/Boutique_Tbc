@@ -222,6 +222,7 @@ footer{
 }
 .reseaux{
     background-color: black;
+    padding-top: 1px;
 }
 .reseaux p{
     color: white;
