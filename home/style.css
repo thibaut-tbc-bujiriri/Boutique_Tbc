@@ -343,4 +343,23 @@ footer{
         top: 500px;
         height: 20px;
     }
+    #menuBox{
+        z-index: 10;
+    }
+    .col1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+    }
+    .col1 img{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        border-radius: 100px;
+    }
+    #textDefil{
+        font-size: 35px;
+    }
 }
